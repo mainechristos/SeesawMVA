@@ -9,7 +9,7 @@ Notification=never
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZGTo2LG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZGTo2LG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZGTo2LG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.log
-arguments = ZGTo2LG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1 117.864*.89
+arguments = ZGTo2LG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWTo2L2Nu_13TeV-powheg/logs/$(Cluster)_output_0.out
@@ -21,228 +21,228 @@ queue
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/logs/$(Cluster)_output_0.log
-arguments = ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1 19.56
+arguments = ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/logs/$(Cluster)_output_0.log
-arguments = ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1 19.56
+arguments = ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZTo2L2Nu_13TeV_powheg_pythia8_ext1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZTo2L2Nu_13TeV_powheg_pythia8_ext1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZTo2L2Nu_13TeV_powheg_pythia8_ext1/logs/$(Cluster)_output_0.log
-arguments = ZZTo2L2Nu_13TeV_powheg_pythia8_ext1 0.564
+arguments = ZZTo2L2Nu_13TeV_powheg_pythia8_ext1
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZTo2L2Q_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZTo2L2Q_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZTo2L2Q_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.log
-arguments = ZZTo2L2Q_13TeV_powheg_pythia8 3.22
+arguments = ZZTo2L2Q_13TeV_powheg_pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2/logs/$(Cluster)_output_0.log
-arguments = WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2 510.6*0.34/.81
+arguments = WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext3/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext3/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext3/logs/$(Cluster)_output_0.log
-arguments = WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext3 510.6*0.47/.81
+arguments = WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext3
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.log
-arguments = WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1 0.007868
+arguments = WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.log
-arguments = WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1 0.02093
+arguments = WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWTo2L2Nu_DoubleScattering_13TeV-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWTo2L2Nu_DoubleScattering_13TeV-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWTo2L2Nu_DoubleScattering_13TeV-pythia8/logs/$(Cluster)_output_0.log
-arguments = WWTo2L2Nu_DoubleScattering_13TeV-pythia8 0.1703
+arguments = WWTo2L2Nu_DoubleScattering_13TeV-pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.log
-arguments = WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8 5.606
+arguments = WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.log
-arguments = WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8 4.42965*1.07
+arguments = WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZTo4L_13TeV_powheg_pythia8_ext1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZTo4L_13TeV_powheg_pythia8_ext1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZTo4L_13TeV_powheg_pythia8_ext1/logs/$(Cluster)_output_0.log
-arguments = ZZTo4L_13TeV_powheg_pythia8_ext1 1.256*1.1
+arguments = ZZTo4L_13TeV_powheg_pythia8_ext1
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8 0.003194*1.7
+arguments = GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8 0.003194*1.7
+arguments = GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8 0.003194*1.7
+arguments = GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8 0.003194*1.7
+arguments = GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8 0.003194*1.7
+arguments = GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8 
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8 0.003194*1.7
+arguments = GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8 
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.2086
+arguments = WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.1651
+arguments = WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.05565
+arguments = WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.01398
+arguments = ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2/logs/$(Cluster)_output_0.log
-arguments = TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2 0.2043
+arguments = TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 0.0493
+arguments = TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext2/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext2/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext2/logs/$(Cluster)_output_0.log
-arguments = TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext2 0.2529*0.44/.85
+arguments = TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext2
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext3/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext3/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext3/logs/$(Cluster)_output_0.log
-arguments = TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext3 0.2529*0.41/.85
+arguments = TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext3
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/tZq_ll_4f_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/tZq_ll_4f_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/tZq_ll_4f_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = tZq_ll_4f_13TeV-amcatnlo-pythia8 0.09418
+arguments = tZq_ll_4f_13TeV-amcatnlo-pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ST_tWll_5f_LO_13TeV_MadGraph_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ST_tWll_5f_LO_13TeV_MadGraph_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ST_tWll_5f_LO_13TeV_MadGraph_pythia8/logs/$(Cluster)_output_0.log
-arguments = ST_tWll_5f_LO_13TeV_MadGraph_pythia8 0.01103
+arguments = ST_tWll_5f_LO_13TeV_MadGraph_pythia8
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8 0.009103
+arguments = TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.007834
+arguments = TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.002938
+arguments = TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.001563
+arguments = TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.log
-arguments = ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8 0.2151
+arguments = ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8 0.01212
+arguments = GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.log
-arguments = VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8 0.001034
+arguments = VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8/logs/$(Cluster)_output_0.log
-arguments = bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8 0.000324
+arguments = bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.log
-arguments = VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8 0.9561
+arguments = VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.log
-arguments = TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8_ext1 87.31
+arguments = TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8_ext1
 queue
 
