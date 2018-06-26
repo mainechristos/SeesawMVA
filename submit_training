@@ -1,0 +1,12 @@
+universe = vanilla
++AccountingGroup = "group_rutgers.mchristos"
+Requirements = (Arch == "X86_64")
+Executable = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/run_training.sh
+should_transfer_files = NO
+Notification=never
+
+output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/logs/$(Cluster)_output_0.out
+error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/logs/$(Cluster)_output_0.err
+log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/logs/$(Cluster)_output_0.log
+arguments = 
+queue
