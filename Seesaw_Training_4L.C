@@ -16,11 +16,11 @@
 
 
 
-void Seesaw_Training_3L( TString myMethodList = "" )
+void Seesaw_Training_4L( TString myMethodList = "" )
 {
    //gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/92X/addAliases.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/customFunctions.C+");
-   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/customFudgeFactors_2016.C+");
+   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/customFunctions.C");
+   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/customFudgeFactors_2016.C");
    gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/matrixMethod_2016.C");
    gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/leptonSFs_2016.C");
    gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/pileupWeights_2016.C");
@@ -31,6 +31,7 @@ void Seesaw_Training_3L( TString myMethodList = "" )
    gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars4.C");
    gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars5.C");
    gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars6.C");
+   gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars7.C");
    
    TMVA::Tools::Instance();
    std::map<std::string,int> Use;
@@ -52,61 +53,69 @@ void Seesaw_Training_3L( TString myMethodList = "" )
       }
    }
 
-   TString outfileName( "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/class_perf/92X_Seesaw_3L_optimized.root" );
+   TString outfileName( "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/class_perf/92X_Seesaw_4L_optimized.root" );
    TFile* outputFile = TFile::Open( outfileName, "RECREATE" );
 
-   TMVA::Factory *factory = new TMVA::Factory( "92X_Seesaw_3L_optimized", outputFile,
-                                               "!V:!Silent:Color:DrawProgressBar:Transformations=G:AnalysisType=Classification" );
+   TMVA::Factory *factory = new TMVA::Factory( "92X_Seesaw_4L_optimized", outputFile,
+                                               "!V:!Silent:Color:DrawProgressBar:Transformations=I;P;G;D,D:AnalysisType=Classification" );
 
    TMVA::DataLoader* dl = new TMVA::DataLoader("dl");
    
-   dl->AddVariable("Alt$(LightLeptonLT3[0],0)");
+   //dl->AddVariable("Alt$(LightLeptonLT4[0],0)");
    dl->AddVariable("Alt$(PFMETType1[0],0)");
    dl->AddVariable("Alt$(LightLeptonPt[0],0)");
    dl->AddVariable("Alt$(LightLeptonPt[1],0)");
    dl->AddVariable("Alt$(LightLeptonPt[2],0)");
-   dl->AddVariable("Alt$(LightLeptonMT3[0],0)");
+   dl->AddVariable("Alt$(LightLeptonPt[3],0)");
+   //dl->AddVariable("Alt$(LightLeptonMT3[0],0)");
    dl->AddVariable("Alt$(LightLeptonEta[0],0)");
    dl->AddVariable("Alt$(LightLeptonEta[1],0)");
    dl->AddVariable("Alt$(LightLeptonEta[2],0)");
+   dl->AddVariable("Alt$(LightLeptonEta[3],0)");
    dl->AddVariable("Alt$(LightLeptonMass[0],0)");
    dl->AddVariable("JetN[0]");
    dl->AddVariable("Sum$(JetCombinedInclusiveSecondaryVertexV2BJetTags>0.8484&&fabs(JetEta)<2.4)");
    dl->AddVariable("Alt$(LightLeptonLeptonDRmin[0],0)");
    dl->AddVariable("Alt$(LightLeptonBestMOSSF[0],0)");
 
-   dl->AddVariable("PtRatio(LightLeptonPt[0],LightLeptonPt[1],LightLeptonPt[2])");
-   dl->AddVariable("PtRatio(LightLeptonPt[1],LightLeptonPt[0],LightLeptonPt[2])");
-   dl->AddVariable("PtRatio(LightLeptonPt[2],LightLeptonPt[0],LightLeptonPt[1])");
+   dl->AddVariable("PtRatio4(LightLeptonPt[0],LightLeptonPt[1],LightLeptonPt[2],LightLeptonPt[3])");
+   dl->AddVariable("PtRatio4(LightLeptonPt[1],LightLeptonPt[0],LightLeptonPt[2],LightLeptonPt[3])");
+   dl->AddVariable("PtRatio4(LightLeptonPt[2],LightLeptonPt[0],LightLeptonPt[1],LightLeptonPt[3])");
+   dl->AddVariable("PtRatio4(LightLeptonPt[3],LightLeptonPt[1],LightLeptonPt[2],LightLeptonPt[0])");
+
 
    dl->AddVariable("DeltaPhi(LightLeptonEta[0],LightLeptonEta[1])");
    dl->AddVariable("DeltaPhi(LightLeptonEta[1],LightLeptonEta[2])");
    dl->AddVariable("DeltaPhi(LightLeptonEta[2],LightLeptonEta[0])");
+   dl->AddVariable("DeltaPhi(LightLeptonEta[0],LightLeptonEta[3])");
+   dl->AddVariable("DeltaPhi(LightLeptonEta[1],LightLeptonEta[3])");
+   dl->AddVariable("DeltaPhi(LightLeptonEta[2],LightLeptonEta[3])");
 
-   dl->AddVariable("LightLeptonDXY(0, Alt$(MuonDXY[0],0),Alt$(MuonDXY[1],0),Alt$(MuonDXY[2],0), Alt$(ElectronDXY[0],0),Alt$(ElectronDXY[1],0),Alt$(ElectronDXY[2],0), LightLeptonFlavor[0], LightLeptonNativeIndex[0])");
-   dl->AddVariable("LightLeptonDXY(1, Alt$(MuonDXY[0],0),Alt$(MuonDXY[1],0),Alt$(MuonDXY[2],0), Alt$(ElectronDXY[0],0),Alt$(ElectronDXY[1],0),Alt$(ElectronDXY[2],0), LightLeptonFlavor[0], LightLeptonNativeIndex[0])");
-   dl->AddVariable("LightLeptonDXY(2, Alt$(MuonDXY[0],0),Alt$(MuonDXY[1],0),Alt$(MuonDXY[2],0), Alt$(ElectronDXY[0],0),Alt$(ElectronDXY[1],0),Alt$(ElectronDXY[2],0), LightLeptonFlavor[0], LightLeptonNativeIndex[0])");
+   //dl->AddVariable("LightLeptonDXY(0, Alt$(MuonDXY[0],0),Alt$(MuonDXY[1],0),Alt$(MuonDXY[2],0), Alt$(ElectronDXY[0],0),Alt$(ElectronDXY[1],0),Alt$(ElectronDXY[2],0), LightLeptonFlavor[0], LightLeptonNativeIndex[0])");
+   //dl->AddVariable("LightLeptonDXY(1, Alt$(MuonDXY[0],0),Alt$(MuonDXY[1],0),Alt$(MuonDXY[2],0), Alt$(ElectronDXY[0],0),Alt$(ElectronDXY[1],0),Alt$(ElectronDXY[2],0), LightLeptonFlavor[0], LightLeptonNativeIndex[0])");
+   //dl->AddVariable("LightLeptonDXY(2, Alt$(MuonDXY[0],0),Alt$(MuonDXY[1],0),Alt$(MuonDXY[2],0), Alt$(ElectronDXY[0],0),Alt$(ElectronDXY[1],0),Alt$(ElectronDXY[2],0), LightLeptonFlavor[0], LightLeptonNativeIndex[0])");
+   //dl->AddVariable("LightLeptonDXY(3, Alt$(MuonDXY[0],0),Alt$(MuonDXY[1],0),Alt$(MuonDXY[2],0), Alt$(ElectronDXY[0],0),Alt$(ElectronDXY[1],0),Alt$(ElectronDXY[2],0), LightLeptonFlavor[0], LightLeptonNativeIndex[0])");
+
+   //dl->AddVariable("metRatio(Alt$(PFMETType1[0],0),Alt$(Sum$(JetPt),0))");
+   //dl->AddVariable("metStRatio := metRatio(Alt$(PFMETType1[0],0),LightLeptonLT4[0]+Alt$(PFMETType1[0],0)+Alt$(Sum$(JetPt),0))");
+   //dl->AddVariable("metRatio(Alt$(PFMETType1[0],0),Alt$(LightLeptonLT4[0],0))");
+
+   //dl->AddVariable("metSquaredRatio(Alt$(PFMETType1[0],0),Alt$(Sum$(JetPt),0))");
+   //dl->AddVariable("metSquaredRatio(Alt$(PFMETType1[0],0),LightLeptonLT4[0]+Alt$(PFMETType1[0],0)+Alt$(Sum$(JetPt),0))");
+   //dl->AddVariable("metSquaredRatio(Alt$(PFMETType1[0],0),Alt$(LightLeptonLT4[0],0))");
    
-   dl->AddVariable("metRatio(Alt$(PFMETType1[0],0),Alt$(Sum$(JetPt),0))");
-   dl->AddVariable("metStRatio := metRatio(Alt$(PFMETType1[0],0),LightLeptonLT3[0]+Alt$(PFMETType1[0],0)+Alt$(Sum$(JetPt),0))");
-   dl->AddVariable("metRatio(Alt$(PFMETType1[0],0),Alt$(LightLeptonLT3[0],0))");
-
-   dl->AddVariable("metSquaredRatio(Alt$(PFMETType1[0],0),Alt$(Sum$(JetPt),0))");
-   dl->AddVariable("metSquaredRatio(Alt$(PFMETType1[0],0),LightLeptonLT3[0]+Alt$(PFMETType1[0],0)+Alt$(Sum$(JetPt),0))");
-   dl->AddVariable("metSquaredRatio(Alt$(PFMETType1[0],0),Alt$(LightLeptonLT3[0],0))");
-   dl->AddVariable("metQuadRatio(Alt$(PFMETType1[0],0),Alt$(Sum$(JetPt),0))");
-
-   dl->AddVariable("metQuadRatio(Alt$(PFMETType1[0],0),LightLeptonLT3[0]+Alt$(PFMETType1[0],0)+Alt$(Sum$(JetPt),0))");
-   dl->AddVariable("metQuadRatio(Alt$(PFMETType1[0],0),Alt$(LightLeptonLT3[0],0))");
+   //dl->AddVariable("metQuadRatio(Alt$(PFMETType1[0],0),Alt$(Sum$(JetPt),0))");
+   //dl->AddVariable("metQuadRatio(Alt$(PFMETType1[0],0),LightLeptonLT4[0]+Alt$(PFMETType1[0],0)+Alt$(Sum$(JetPt),0))");
+   //dl->AddVariable("metQuadRatio(Alt$(PFMETType1[0],0),Alt$(LightLeptonLT4[0],0))");
+   
    dl->AddVariable("Alt$(Sum$(JetPt),0)");
-
-   dl->AddVariable("Alt$(LightLeptonLT3[0],0)+Alt$(PFMETType1[0],0)+Alt$(Sum$(JetPt),0)");
+   dl->AddVariable("Alt$(LightLeptonLT4[0],0)+Alt$(PFMETType1[0],0)+Alt$(Sum$(JetPt),0)");
    dl->AddVariable("Alt$(LightLeptonBestMSSSF[0],0)");
    dl->AddVariable("Alt$(LightLeptonPairPt[0],0)");
 
 
    std::string mass = "140";
-   int nleptons = 3;
+   int nleptons = 4;
    float lumi = 35867.;
    gStyle->SetOptStat(0);
 
@@ -133,13 +142,13 @@ void Seesaw_Training_3L( TString myMethodList = "" )
 
    
 
-   TCut mycuts = "((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
+   //TCut mycuts = "((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
 
-   TCut mycutb = "((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
+   //TCut mycutb = "((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
 
-   //TCut mycuts = "(L3OnZ&&L4VLL==1&&LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
+   TCut mycuts = "(L4OSSF1||L4OSSF2)&&LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0&&L4VLL";
 
-   //TCut mycutb = "(L3OnZ&&L4VLL==1&&LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
+   TCut mycutb = "(L4OSSF1||L4OSSF2)&&LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0&&L4VLL";
 
 
    
@@ -175,7 +184,7 @@ void Seesaw_Training_3L( TString myMethodList = "" )
       ss >> k_factor;         //reads process name and other numbers into respective variables
 
 
-      std::string in = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/"+process+"/shortTree_3L.root";
+      std::string in = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/"+process+"/shortTree_4L.root";
       const char *sig_name = in.c_str();
       TFile *sig_input = TFile::Open( sig_name );     //opens signal file matching process name
 
@@ -189,7 +198,7 @@ void Seesaw_Training_3L( TString myMethodList = "" )
       
 
       TH1D *EventsSignal= new TH1D("EventsSignal","EventsSignal",60,0,600);
-      signal->Draw("LightLeptonPt[0]>>EventsSignal",mycuts*Weight);
+      signal->Draw("LightLeptonPt>>EventsSignal",mycuts*Weight);
 
       signal_events += EventsSignal->Integral();
 
@@ -215,7 +224,7 @@ void Seesaw_Training_3L( TString myMethodList = "" )
 
 
    
-   std::ifstream infileb("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/backgrounds_TMVA.txt");
+   std::ifstream infileb("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/backgrounds_TMVA_4L.txt");
    std::string lineb;
    std::getline(infileb, lineb);    //throws away first line which includes titles
 
@@ -235,7 +244,7 @@ void Seesaw_Training_3L( TString myMethodList = "" )
       
       // if file is ttbar or dy, it is store in a different directory than all other MCs!
       
-      in = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/"+bg+"/shortTree_3L.root";
+      in = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/"+bg+"/shortTree_4L.root";
       const char *back_name = in.c_str();
       TFile *back_input = TFile::Open( back_name ); 
       
@@ -253,12 +262,10 @@ void Seesaw_Training_3L( TString myMethodList = "" )
       
       //if file is not DY, then it gets written into background histo
       if(bundleName.find("dy") == std::string::npos){
-         background->Draw("LightLeptonPt[0]>>backgroundEvents",mycutb*Weight);
+         background->Draw("LightLeptonPt>>backgroundEvents",mycutb*Weight);
       }
       // All files are written into MisID histo with fakes req.
-
-         background->Draw("LightLeptonPt[0]>>MisIdEvents",mycutb*WeightMisId);
-            
+      background->Draw("LightLeptonPt>>MisIdEvents",mycutb*WeightMisId);
 
       //check bundle name and add events to appropriate histo
       if(bundleName.find("xg") != std::string::npos){
@@ -267,7 +274,7 @@ void Seesaw_Training_3L( TString myMethodList = "" )
 
          backgroundEvents->Scale(lumi);
          MisIdEvents->Scale(lumi);
-
+         cout<<xg_events*lumi<<endl;
          finalhisto_xg->Add(backgroundEvents);
          finalhisto_misid->Add(MisIdEvents);
       
@@ -382,15 +389,25 @@ void Seesaw_Training_3L( TString myMethodList = "" )
    cout<<finalhisto_misid->Integral()<<endl;
    cout<<finalhisto_signal->Integral()<<endl;
 
-   hstack->Add(finalhisto_vvv);
-   hstack->Add(finalhisto_zz);
-   hstack->Add(finalhisto_higgs);
    
-   hstack->Add(finalhisto_ttv);
-   hstack->Add(finalhisto_wz);
+   
+   
+   
+   
+   //hstack->Add(finalhisto_wz);
+   
+   
+   
+   
+   
+   
    hstack->Add(finalhisto_xg);
-   
+   hstack->Add(finalhisto_wz);
    hstack->Add(finalhisto_misid);
+   hstack->Add(finalhisto_vvv);
+   hstack->Add(finalhisto_higgs);
+   hstack->Add(finalhisto_ttv);
+   hstack->Add(finalhisto_zz);
    
    
    
@@ -408,22 +425,28 @@ void Seesaw_Training_3L( TString myMethodList = "" )
    finalhisto_signal->Draw("same");
    finalhisto_signal->SetLineColor(kYellow);
    finalhisto_signal->SetLineWidth(2);
-   hstack->GetXaxis()->SetTitle("P_{T} of First Lepton (GeV)");
+   hstack->GetXaxis()->SetTitle("P_{T} 1st lepton (GeV)");
    cst->Update();
 
    TLegend *legend=new TLegend(0.5,0.5,.9,.9);
    legend->SetHeader("Training Inputs"); // option "C" allows to center the header
-   
-   
-   legend->AddEntry(finalhisto_misid,("MisId - Integral: "+std::to_string(finalhisto_misid->Integral())).c_str());
-   legend->AddEntry(finalhisto_xg,("XG - Integral: "+std::to_string(finalhisto_xg->Integral())).c_str());
-   legend->AddEntry(finalhisto_wz,("WZ - Integral: "+std::to_string(finalhisto_wz->Integral())).c_str());
-   
+   legend->AddEntry(finalhisto_zz,("ZZ - Integral: "+std::to_string(finalhisto_zz->Integral())).c_str());
    legend->AddEntry(finalhisto_ttv,("ttV - Integral: "+std::to_string(finalhisto_ttv->Integral())).c_str());
    legend->AddEntry(finalhisto_higgs,("Higgs - Integral: "+std::to_string(finalhisto_higgs->Integral())).c_str());
-   legend->AddEntry(finalhisto_zz,("ZZ - Integral: "+std::to_string(finalhisto_zz->Integral())).c_str());
-   
    legend->AddEntry(finalhisto_vvv,("VVV - Integral: "+std::to_string(finalhisto_vvv->Integral())).c_str());
+   legend->AddEntry(finalhisto_wz,("WZ - Integral: "+std::to_string(finalhisto_wz->Integral())).c_str());
+   legend->AddEntry(finalhisto_misid,("MisId - Integral: "+std::to_string(finalhisto_misid->Integral())).c_str());
+   legend->AddEntry(finalhisto_xg,("XG - Integral: "+std::to_string(finalhisto_xg->Integral())).c_str());
+   legend->AddEntry(finalhisto_signal,("Sigma_{380} - Integral: "+std::to_string(finalhisto_signal->Integral())).c_str());
+   
+
+   //legend->AddEntry(finalhisto_wz,("WZ - Integral: "+std::to_string(finalhisto_wz->Integral())).c_str());
+   
+   
+   
+   
+   
+   
    
    
    legend->AddEntry(finalhisto_signal,("Sigma_{140} - Integral: "+std::to_string(finalhisto_signal->Integral())).c_str());
@@ -440,15 +463,26 @@ void Seesaw_Training_3L( TString myMethodList = "" )
    //factory->BookMethod( dl, TMVA::Types::kBDT, "Identity", "!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6" );
    //factory->BookMethod( dl, TMVA::Types::kBDT, "PCA", "!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6::VarTransform=P" );
    //factory->BookMethod( dl, TMVA::Types::kBDT, "BDT", "!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6::VarTransform=G" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "BDT1", "!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6::VarTransform=I" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "Identity", "!H:!V:NTrees=1000:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=100:MaxDepth=6::VarTransform=I" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "PCA", "!H:!V:NTrees=1000:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=100:MaxDepth=6::VarTransform=P" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "Deco", "!H:!V:NTrees=1000:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=100:MaxDepth=6::VarTransform=D" );
+   factory->BookMethod( dl, TMVA::Types::kBDT, "BDT", "!H:!V:NTrees=1000:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=100:MaxDepth=6::VarTransform=G" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "BDT3", "!H:!V:NTrees=150:MinNodeSize=7.5%:BoostType=Grad:Shrinkage=1:nCuts=5:MaxDepth=4::VarTransform=I" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "BDT", "!H:!V:NTrees=25:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=4::VarTransform=I" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "Identity", "!H:!V:NTrees=10:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=4::VarTransform=I" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "Decorrelation", "!H:!V:NTrees=150:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=4::VarTransform=I" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "PCA", "!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=4::VarTransform=I" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "BDT3", "!H:!V:NTrees=150:MinNodeSize=7.5%:BoostType=Grad:Shrinkage=1:nCuts=5:MaxDepth=4::VarTransform=G" );
    //factory->BookMethod( dl, TMVA::Types::kBDT, "Decorrelation", "!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6::VarTransform=D" );
-   factory->BookMethod( dl, TMVA::Types::kBDT, "BDT", "!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6::VarTransform=G" );
+   //factory->BookMethod( dl, TMVA::Types::kBDT, "BDT1", "!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6::VarTransform=G" );
    //factory->BookMethod( dl, TMVA::Types::kBDT, "BDT2", "!H:!V:NTrees=850:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6::VarTransform=G" );
    //factory->BookMethod( dl, TMVA::Types::kBDT, "BDT3", "!H:!V:NTrees=850:MinNodeSize=7.5%:BoostType=Grad:Shrinkage=.7:nCuts=5:MaxDepth=4" );
 
    //GRADIENT BOOSTING
 
    //shrinkage
-   /*
+  /*
   factory->BookMethod( dl, TMVA::Types::kBDT, "shrinkage .01","!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=.01:nCuts=20:MaxDepth=6" );
    factory->BookMethod( dl, TMVA::Types::kBDT, "shrinkage .1","!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=.1:nCuts=20:MaxDepth=6" );
    factory->BookMethod( dl, TMVA::Types::kBDT, "shrinkage .3","!H:!V:NTrees=450:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=.3:nCuts=20:MaxDepth=6" );
@@ -486,7 +520,7 @@ void Seesaw_Training_3L( TString myMethodList = "" )
    factory->BookMethod( dl, TMVA::Types::kBDT, "850 trees","!H:!V:NTrees=850:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6"  );
    factory->BookMethod( dl, TMVA::Types::kBDT, "1000 trees","!H:!V:NTrees=1000:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6"  );
    factory->BookMethod( dl, TMVA::Types::kBDT, "2000 trees","!H:!V:NTrees=2000:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6"  );
-   factory->BookMethod( dl, TMVA::Types::kBDT, "10000 trees","!H:!V:NTrees=10000:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6"  );
+   factory->BookMethod( dl, TMVA::Types::kBDT, "50 trees","!H:!V:NTrees=50:MinNodeSize=2.5%:BoostType=Grad:Shrinkage=1:nCuts=20:MaxDepth=6"  );
    */
    
 

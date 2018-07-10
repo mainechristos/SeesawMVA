@@ -10,4 +10,4 @@ export SCRAM_ARCH=slc6_amd64_gcc493
 export DISPLAY=localhost:0.0
 eval `scramv1 runtime -sh`
 cd /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims
-root -l -b -q /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/Seesaw_Training_3L.C > opt.txt
+root -l -b -q /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/Seesaw_Training_4L.C > ntrees.txt

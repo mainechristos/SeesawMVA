@@ -8,8 +8,8 @@
 #include "TTreeReaderValue.h"
 
 #include "/cms/mchristos/ANN/Seesaw/2016/92X/addAliases.C"
-#include "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/EvalWeights.C"
 #include "/cms/mchristos/software/pyPlotter/tools/customFunctions.C"
+#include "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/EvalWeights.C"
 #include "/cms/mchristos/software/pyPlotter/tools/customFudgeFactors_2016.C"
 #include "/cms/mchristos/software/pyPlotter/tools/matrixMethod_2016.C"
 #include "/cms/mchristos/software/pyPlotter/tools/leptonSFs_2016.C"
@@ -25,14 +25,14 @@ float SignalWeight(int Event, int LS, float LightLeptonTightTypeA, float LightLe
 		weight = (2*((Event+LS)%2==0)*(LightLeptonTightTypeA==111)*(leptonSF3D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,PULightLeptonFlavorType))*(trigEffSF3D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonFlavorType3D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue))*(LightLeptonNonFakeTypeA==111));
 	
 	}else if(LightLeptonN==4){
-		weight = (2*((Event+LS)%2==0)*(LightLeptonTightTypeA==1111)*(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))*(trigEffSF4D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonFlavorType4D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue))*(LightLeptonNonFakeTypeA==1111));
+		weight = 2*((Event+LS)%2==0)*((LightLeptonTightTypeA==1111)*(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))*(trigEffSF4D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonFlavorType4D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue)))*(LightLeptonNonFakeTypeA==1111);
 	}
 
 	
 	return weight;
 }
 void makeSkims_TMVA_signal(){
-
+	int nleptons = RRR;
 		//All of the variables we need to calculate the weights
 	float PFMETType1, LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonLT3;
 	float LightLeptonMass, LightLeptonBestMOSSF, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3;
@@ -132,8 +132,13 @@ void makeSkims_TMVA_signal(){
 
 
 		//File where final analysis tree will be stored
-	TFile *endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/QQQ/shortTree.root","RECREATE");
-
+	TFile *endfile;
+	if(nleptons==4){
+		endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/QQQ/shortTree_4L.root","RECREATE");
+	}
+	else if(nleptons==3){
+		endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/QQQ/shortTree_3L.root","RECREATE");
+	}
 		//Clone tree shortTree from original tree which will have only activated branches. Add weight branch to store by-event weights
 	TTree *shortTree = tree->CloneTree(0);
 	std::vector<double> *weight = new std::vector<double>(0);
@@ -642,9 +647,11 @@ void makeSkims_TMVA_signal(){
 
 
 	}
+	TTree *analysisTree;
+	analysisTree = shortTree->CopyTree("(LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0&&L4VLL>0)||((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)");
 
 	    //Copy only events in shortTree satisfying SR selections fro and copy them into analysis Tree
-	TTree *analysisTree = shortTree->CopyTree("((L4OSSF1||L4OSSF2)&&L4VLL==1&&LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)||((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)");
+	cout<<"Working"<<endl;
 	analysisTree->Write();
 	endfile->Close(); 
 

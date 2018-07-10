@@ -10,30 +10,23 @@
 #include "TObjString.h"
 #include "TSystem.h"
 #include "TROOT.h"
-#include "/cms/mchristos/ANN/Seesaw/2016/92X/addAliases.C"
+
+
+#include "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/addAliases.C"
+#include "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/EvalWeights.C"
+#include "/cms/mchristos/software/pyPlotter/tools/customFunctions.C"
+#include "/cms/mchristos/software/pyPlotter/tools/customFudgeFactors_2016.C"
+#include "/cms/mchristos/software/pyPlotter/tools/matrixMethod_2016.C"
+#include "/cms/mchristos/software/pyPlotter/tools/leptonSFs_2016.C"
+#include "/cms/mchristos/software/pyPlotter/tools/pileupWeights_2016.C"
+#include "/cms/mchristos/software/pyPlotter/tools/triggerEffScaleFactor_2016.C"
+#include "/cms/mchristos/software/pyPlotter/tools/bTagSF.C"
+
 
 
 
 void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
 {
-   //gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/92X/addAliases.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/customFunctions.C+");
-   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/customFudgeFactors_2016.C+");
-   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/matrixMethod_2016.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/leptonSFs_2016.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/pileupWeights_2016.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/triggerEffScaleFactor_2016.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars2.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars3.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars4.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars5.C");
-   gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/inputVars6.C");
-   
-
-   
-   //gROOT->ProcessLineSync(".L /cms/mchristos/ANN/Seesaw/2016/custom_functions/makeTLVector.C");
-
 
    std::string mass = "140";
    int nleptons = 3;
@@ -58,9 +51,9 @@ void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
 
       backgroundExpression += "(dataType==1)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA==1111)";
 
-      backgroundExpression += "+(dataType==4)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA==1111)*(jetWeights_WZ_powheg_2016(JetN[0]))";
+      backgroundExpression += "+(dataType==4)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA==1111)";
 
-      //backgroundExpression += "(dataType==5)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA==1111)";
+      backgroundExpression += "+(dataType==5)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA==1111)";
 
       backgroundExpression += "+(dataType==6)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA==1111)";
 
@@ -68,7 +61,7 @@ void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
 
       MisIdExpression += "(dataType==1)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA<1111)";
 
-      MisIdExpression += "+(dataType==4)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA<1111)*(jetWeights_WZ_powheg_2016(JetN[0]))";
+      MisIdExpression += "+(dataType==4)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA<1111)";
 
       MisIdExpression += "+(dataType==5)*(LightLeptonTightType4DA==1111)*(leptonSF4D(LightLeptonPt[0],LightLeptonEta[0],LightLeptonPt[1],LightLeptonEta[1],LightLeptonPt[2],LightLeptonEta[2],LightLeptonPt[3],LightLeptonEta[3],PULightLeptonFlavorType4D))*(trigEffSF4D(LightLeptonPt[0], LightLeptonPt[1], LightLeptonPt[2], LightLeptonPt[3], LightLeptonEta[0], LightLeptonEta[1], LightLeptonEta[2],LightLeptonEta[3], LightLeptonFlavorType4D[0]))*pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue[0])*(LightLeptonNonFakeType4DA<1111)";
 
@@ -104,15 +97,16 @@ void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
 
    }
 
-   TCut mycuts = "(L3OnZ&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
-
-   TCut mycutb = "(L3OnZ&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
-
-   //TCut mycuts = "(L3OnZ&&L4VLL==1&&LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
-
-   //TCut mycutb = "(L3OnZ&&L4VLL==1&&LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
-
-
+   TCut mycuts = "";
+   TCut mycutb = "";
+   
+   if(nleptons ==4){
+      mycuts += "LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0&&L4VLL>0";
+      mycutb += "LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0&&L4VLL>0";
+   }else if(nleptons ==3){
+      mycuts += "((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
+      mycutb += "((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)";
+   }
    
 
    double signal_events = 0.0;
@@ -192,9 +186,22 @@ void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
    
 
 
+   std::string infileb_3L = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/backgrounds_TMVA.txt";
+   std::string infileb_4L = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/backgrounds_TMVA_4L.txt";
 
+   const char *bg_name;
    
-   std::ifstream infileb("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/backgrounds.txt");
+   if (nleptons == 4){
+      bg_name = infileb_4L.c_str();
+   }else if(nleptons ==3){
+      bg_name = infileb_3L.c_str();
+
+   }
+
+
+
+   std::ifstream infileb (bg_name);
+
    std::string lineb;
    std::getline(infileb, lineb);    //throws away first line which includes titles
 
@@ -235,23 +242,24 @@ void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
       //calculate by-file weight (should include sf/ any constant weights in pyPlotter)
       double n = EventCount->GetBinContent(1);
       Double_t backgroundWeight = back_xsec/n;
+      cout<<"BG Weight: "<<backgroundWeight<<endl;
       
 
       TH1D *backgroundEvents= new TH1D("backgroundEvents","backgroundEvents",60,0,600);
       TH1D *MisIdEvents= new TH1D("MisIdEvents","MisIdEvents",60,0,600);
       
-      //if file is not DY, then it gets written into background histo
-      if(bundleName.find("dy") == std::string::npos){
-         background->Draw("(LightLeptonPt)>>backgroundEvents",mycutb*backgroundExpression);
-      }
       // All files are written into MisID histo with fakes req.
+      background->Draw("(LightLeptonPt)>>backgroundEvents",mycutb*backgroundExpression);
       background->Draw("(LightLeptonPt)>>MisIdEvents",mycutb*MisIdExpression);
+      
+      
+
 
       //check bundle name and add events to appropriate histo
       if(bundleName.find("xg") != std::string::npos){
          xg_events += backgroundEvents->Integral()*backgroundWeight;
          misid_events += MisIdEvents->Integral()*backgroundWeight;
-
+         cout<<"This probably won't work: "<<backgroundEvents->Integral()<<endl;
          backgroundEvents->Scale(backgroundWeight*lumi);
          MisIdEvents->Scale(backgroundWeight*lumi);
 
@@ -304,6 +312,7 @@ void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
          finalhisto_misid->Add(MisIdEvents);
       }else if(bundleName.find("dy") != std::string::npos){
          misid_events += MisIdEvents->Integral()*backgroundWeight;
+         cout<<"This probably won't work: "<<backgroundEvents->Integral()<<endl;
 
          MisIdEvents->Scale(backgroundWeight*lumi);
 
@@ -365,13 +374,17 @@ void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
    cout<<finalhisto_misid->Integral()<<endl;
    cout<<finalhisto_signal->Integral()<<endl;
 
-   hstack->Add(finalhisto_higgs);
-   hstack->Add(finalhisto_xg);
    hstack->Add(finalhisto_vvv);
+   hstack->Add(finalhisto_higgs);
    hstack->Add(finalhisto_zz);
-   hstack->Add(finalhisto_misid);
    hstack->Add(finalhisto_ttv);
+   hstack->Add(finalhisto_xg);
    hstack->Add(finalhisto_wz);
+   hstack->Add(finalhisto_misid);
+   
+   
+   
+   
    
    
    
@@ -392,20 +405,22 @@ void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
 
    TLegend *legend=new TLegend(0.5,0.5,.9,.9);
    legend->SetHeader("Training Inputs"); // option "C" allows to center the header
-   legend->AddEntry(finalhisto_wz,("WZ - Integral: "+std::to_string(finalhisto_wz->Integral())).c_str());
-   legend->AddEntry(finalhisto_ttv,("ttV - Integral: "+std::to_string(finalhisto_ttv->Integral())).c_str());
    legend->AddEntry(finalhisto_misid,("MisId - Integral: "+std::to_string(finalhisto_misid->Integral())).c_str());
-   legend->AddEntry(finalhisto_zz,("ZZ - Integral: "+std::to_string(finalhisto_zz->Integral())).c_str());
-   legend->AddEntry(finalhisto_vvv,("VVV - Integral: "+std::to_string(finalhisto_vvv->Integral())).c_str());
+   legend->AddEntry(finalhisto_wz,("WZ - Integral: "+std::to_string(finalhisto_wz->Integral())).c_str());
    legend->AddEntry(finalhisto_xg,("XG - Integral: "+std::to_string(finalhisto_xg->Integral())).c_str());
+   legend->AddEntry(finalhisto_ttv,("ttV - Integral: "+std::to_string(finalhisto_ttv->Integral())).c_str());
+   legend->AddEntry(finalhisto_zz,("ZZ - Integral: "+std::to_string(finalhisto_zz->Integral())).c_str());
+   
    legend->AddEntry(finalhisto_higgs,("Higgs - Integral: "+std::to_string(finalhisto_higgs->Integral())).c_str());
+   legend->AddEntry(finalhisto_vvv,("VVV - Integral: "+std::to_string(finalhisto_vvv->Integral())).c_str());
+   
    
    
    legend->AddEntry(finalhisto_signal,("Sigma_{380} - Integral: "+std::to_string(finalhisto_signal->Integral())).c_str());
    
    legend->Draw();
 
-   cst->SaveAs("L3OnZ.png");
+   cst->SaveAs("3L_noMod2Weights.png");
    
 
 }

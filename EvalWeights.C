@@ -114,7 +114,7 @@ float makeLightLeptonTightType4DA( TTreeReaderValue<vector<Int_t>> &inMuonIsTigh
 }
 float makePULightLeptonFlavorType4D(int RecoVertexN, int LightLeptonFlavorType4D){
 	float type = 0.0;
-	type = ((RecoVertexN)*1000)+LightLeptonFlavorType4D;
+	type = ((RecoVertexN)*10000)+LightLeptonFlavorType4D;
 	return type;
 }
 float makeLightLeptonNonFakeType4DA(float LightLeptonMatchedPromptGenLeptonDr0,float LightLeptonMatchedPromptGenLeptonDr1, float LightLeptonMatchedPromptGenLeptonDr2, float LightLeptonMatchedPromptGenLeptonDr3, int LightLeptonN, float LightLeptonMatchedPromptGenPhotonDr0, float LightLeptonMatchedPromptGenPhotonDr1, float LightLeptonMatchedPromptGenPhotonDr2, float LightLeptonMatchedPromptGenPhotonDr3){

@@ -5,274 +5,249 @@ Executable = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/run_backgroundSkims_TM
 should_transfer_files = NO
 Notification=never
 
-
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZGTo2LG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZGTo2LG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZGTo2LG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.log
-arguments = ZGTo2LG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 117.864*.89 3 
-queue
-
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWTo2L2Nu_13TeV-powheg/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWTo2L2Nu_13TeV-powheg/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWTo2L2Nu_13TeV-powheg/logs/$(Cluster)_output_0.log
-arguments = WWTo2L2Nu_13TeV-powheg 12.178 3
+arguments = WWTo2L2Nu_13TeV-powheg 12.05622 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1/logs/$(Cluster)_output_0.log
-arguments = ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1 19.56 3
+arguments = ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1 19.3644 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1/logs/$(Cluster)_output_0.log
-arguments = ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1 19.56 3
+arguments = ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1_ext1 19.3644 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZTo2L2Nu_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZTo2L2Nu_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZTo2L2Nu_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.log
-arguments = ZZTo2L2Nu_13TeV_powheg_pythia8 0.564 3
+arguments = ZZTo2L2Nu_13TeV_powheg_pythia8 0.55836 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZTo2L2Q_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZTo2L2Q_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZTo2L2Q_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.log
-arguments = ZZTo2L2Q_13TeV_powheg_pythia8 3.22 3
+arguments = ZZTo2L2Q_13TeV_powheg_pythia8 3.1878 4
 queue
-
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.log
-arguments = WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1 510.6 3
-queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.log
-arguments = WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1 0.007868 3
+arguments = WmWmJJ_13TeV-powheg-pythia8_TuneCUETP8M1 0.00778932 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1/logs/$(Cluster)_output_0.log
-arguments = WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1 0.02093 3
+arguments = WpWpJJ_13TeV-powheg-pythia8_TuneCUETP8M1 0.0207207 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWTo2L2Nu_DoubleScattering_13TeV-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWTo2L2Nu_DoubleScattering_13TeV-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWTo2L2Nu_DoubleScattering_13TeV-pythia8/logs/$(Cluster)_output_0.log
-arguments = WWTo2L2Nu_DoubleScattering_13TeV-pythia8 0.1703 3
+arguments = WWTo2L2Nu_DoubleScattering_13TeV-pythia8 0.168597 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.log
-arguments = WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8 5.606 3
+arguments = WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8 5.54994 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.log
-arguments = WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8 4.42965*1.07 3
+arguments = WZTo3LNu_TuneCUETP8M1_13TeV-powheg-pythia8 4.692328245 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZTo4L_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZTo4L_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZTo4L_13TeV_powheg_pythia8/logs/$(Cluster)_output_0.log
-arguments = ZZTo4L_13TeV_powheg_pythia8 1.256*1.1*0.95 3
+arguments = ZZTo4L_13TeV_powheg_pythia8 1.367784 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8 0.003194*1.7*0.95 3
+arguments = GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8 0.005375502 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8 0.003194*1.7*0.95 3
+arguments = GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8 0.005375502 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8 0.003194*1.7*0.95 3
+arguments = GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8 0.005375502 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8 0.003194*1.7*0.95 3
+arguments = GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8 0.002669238 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8 0.003194*1.7*0.95 3
+arguments = GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8 0.002669238 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8 0.003194*1.7*0.95 3
+arguments = GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8 0.002669238 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.2086 3
+arguments = WWW_4F_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.206514 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.1651 3
+arguments = WWZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.1651 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.05565 3
+arguments = WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.05565 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.01398 3
+arguments = ZZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8 0.01398 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext1/logs/$(Cluster)_output_0.log
-arguments = TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext1 0.2043*.45 3
+arguments = TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext1 0.09101565 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2/logs/$(Cluster)_output_0.log
-arguments = TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2 0.2043*.55 3
+arguments = TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8_ext2 0.112365 4
 queue  
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 0.0493 3
+arguments = TTZToLL_M-1to10_TuneCUETP8M1_13TeV-madgraphMLM-pythia8 0.0493 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext1/logs/$(Cluster)_output_0.log
-arguments = TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext1 0.2529 3
+arguments = TTZToLLNuNu_M-10_TuneCUETP8M1_13TeV-amcatnlo-pythia8_ext1 0.2529 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/tZq_ll_4f_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/tZq_ll_4f_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/tZq_ll_4f_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = tZq_ll_4f_13TeV-amcatnlo-pythia8 0.09418 3
+arguments = tZq_ll_4f_13TeV-amcatnlo-pythia8 0.0932382 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ST_tWll_5f_LO_13TeV_MadGraph_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ST_tWll_5f_LO_13TeV_MadGraph_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ST_tWll_5f_LO_13TeV_MadGraph_pythia8/logs/$(Cluster)_output_0.log
-arguments = ST_tWll_5f_LO_13TeV_MadGraph_pythia8 0.01103 3
+arguments = ST_tWll_5f_LO_13TeV_MadGraph_pythia8 0.01103 4
 queue 
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8 0.009103 3
+arguments = TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8 0.009103 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.007834 3
+arguments = TTWW_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.007834 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.002938 3
+arguments = TTWZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.002938 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.001563 3
+arguments = TTZZ_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.001563 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8/logs/$(Cluster)_output_0.log
-arguments = ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8 0.2151 3
+arguments = ttHToNonbb_M125_TuneCUETP8M2_ttHtranche3_13TeV-powheg-pythia8 0.2151 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.log
-arguments = GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8 0.01212 3
+arguments = GluGluHToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8 0.01212 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8/logs/$(Cluster)_output_0.log
-arguments = VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8 0.001034 3
+arguments = VBF_HToZZTo4L_M125_13TeV_powheg2_JHUgenV6_pythia8 0.001034 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8/logs/$(Cluster)_output_0.log
-arguments = bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8 0.000324 3
+arguments = bbH_HToZZTo4L_M125_13TeV_JHUgenV702_pythia8 0.000324 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8/logs/$(Cluster)_output_0.log
-arguments = VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8 0.9561 3
-queue
-
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.log
-arguments = DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 11352.1 3
+arguments = VHToNonbb_M125_13TeV_amcatnloFXFX_madspin_pythia8 0.9561 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1/logs/$(Cluster)_output_0.log
-arguments = DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1 7257.9 3
+arguments = DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext1 14370.642 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.log
-arguments = DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 1095.426 3 
-queue
-
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2/logs/$(Cluster)_output_0.log
-arguments = DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2 4669.974 3 
+arguments = DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 4452.04188  4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8 87.31 3
+arguments = TTJets_Dilept_TuneCUETP8M2T4_13TeV-amcatnloFXFX-pythia8 86.4369 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTTJ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTTJ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTTJ_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTTJ_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.0004812 3
+arguments = TTTJ_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.000476388 4
 queue
 
 output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTTW_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.out
 error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTTW_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.err
 log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/TTTW_TuneCUETP8M2T4_13TeV-madgraph-pythia8/logs/$(Cluster)_output_0.log
-arguments = TTTW_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.0008612 3
+arguments = TTTW_TuneCUETP8M2T4_13TeV-madgraph-pythia8 0.0008612 4
 queue
 

@@ -26,7 +26,8 @@ float dataType1Weight(int dataType, int Event, int LS, float LightLeptonTightTyp
 		weight = (2*((Event+LS)%2==0)*(LightLeptonTightTypeA==111)*(leptonSF3D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,PULightLeptonFlavorType))*(trigEffSF3D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonFlavorType3D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue)));
 	
 	}else if(LightLeptonN==4){
-		weight = (2*((Event+LS)%2==0)*(LightLeptonTightTypeA==1111)*(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))*(trigEffSF4D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonFlavorType4D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue)));
+		
+		weight = 2*((Event+LS)%2==0)*((LightLeptonTightTypeA==1111)*(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))*(trigEffSF4D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonFlavorType4D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue)));
 	}
 
 	
@@ -41,7 +42,7 @@ float dataType4Weight(int dataType, int Event, int LS, float LightLeptonTightTyp
 		weight = 2*((Event+LS)%2==0)*((LightLeptonTightTypeA==111)*(leptonSF3D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,PULightLeptonFlavorType))*(trigEffSF3D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonFlavorType3D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue)))*(jetWeights_WZ_powheg_2016(JetN));
 	
 	}else if(LightLeptonN==4){
-		weight = 2*((Event+LS)%2==0)*((LightLeptonTightTypeA==1111)*(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))*(trigEffSF4D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonFlavorType4D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue)))*(jetWeights_WZ_powheg_2016(JetN));
+		weight = 2*((Event+LS)%2==0)*((LightLeptonTightTypeA==1111)*(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))*(trigEffSF4D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonFlavorType4D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue)));
 	}
 
 	
@@ -56,7 +57,7 @@ float dataType5Weight(int dataType, int Event, int LS, float LightLeptonTightTyp
 		weight = ((LightLeptonTightTypeA==111)*(leptonSF3D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,PULightLeptonFlavorType))*(trigEffSF3D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonFlavorType3D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue))*(LightLeptonNonFakeTypeA<111));
 	
 	}else if(LightLeptonN==4){
-		weight = ((LightLeptonTightTypeA==1111)*(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))*(trigEffSF4D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonFlavorType4D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue))*(LightLeptonNonFakeTypeA<1111));
+		weight = ((LightLeptonTightTypeA==1111)*(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))*(trigEffSF4D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonFlavorType4D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue)));
 	}
 
 	
@@ -89,11 +90,13 @@ float dataType7Weight(int dataType, int Event, int LS, float LightLeptonTightTyp
 		weight = ((LightLeptonTightTypeA==1111)*(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))*(trigEffSF4D(LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonFlavorType4D))*(pileupWeightsOffXsecMinus5(GenPileUpInteractionsTrue)));
 	}
 
-	
+	if(LightLeptonN==4&&leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType)>0){
+		cout<<(leptonSF4D(LightLeptonPt0,LightLeptonEta0,LightLeptonPt1,LightLeptonEta1,LightLeptonPt2,LightLeptonEta2,LightLeptonPt3,LightLeptonEta3,PULightLeptonFlavorType))<<endl;
+	}
 	return weight;
 }
 void makeSkims_TMVA(){
-
+	int nleptons = RRR;
 		//All of the variables we need to calculate the weights
 	float PFMETType1, LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, LightLeptonLT3;
 	double dataType;
@@ -201,7 +204,13 @@ void makeSkims_TMVA(){
 
 
 		//File where final analysis tree will be stored
-	TFile *endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/QQQ/shortTree.root","RECREATE");
+	TFile *endfile;
+	if(nleptons==4){
+		endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/QQQ/shortTree_4L.root","RECREATE");
+	}
+	else if(nleptons==3){
+		endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/QQQ/shortTree_3L.root","RECREATE");
+	}
 
 		//Clone tree shortTree from original tree which will have only activated branches. Add weight branch to store by-event weights
 	TTree *shortTree = tree->CloneTree(0);
@@ -250,6 +259,7 @@ void makeSkims_TMVA(){
 		//Begin loop over tree
 	int count = 0;
 	float sum_of_weights = 0;
+	int countcheck = 0;
 	std::cout << "--- Processing: " << tree->GetEntries() << " events" << std::endl;
 
 	while (myReader.Next()) {
@@ -706,7 +716,11 @@ void makeSkims_TMVA(){
 			PULightLeptonFlavorType = makePULightLeptonFlavorType4D(RecoVertexN, LightLeptonFlavorType4D);
 			LightLeptonNonFakeTypeA = makeLightLeptonNonFakeType4DA(LightLeptonMatchedPromptGenLeptonDr0, LightLeptonMatchedPromptGenLeptonDr1, LightLeptonMatchedPromptGenLeptonDr2, LightLeptonMatchedPromptGenLeptonDr3, LightLeptonN, LightLeptonMatchedPromptGenPhotonDr0, LightLeptonMatchedPromptGenPhotonDr1, LightLeptonMatchedPromptGenPhotonDr2, LightLeptonMatchedPromptGenPhotonDr3);
 		}
+		if(PULightLeptonFlavorType>45&&LightLeptonN==4){
+			countcheck++;
 
+		}
+		
 
 		if(dataType==1){
 			EventWeight = dataType1Weight(dataType, Event, LS, LightLeptonTightTypeA, LightLeptonLT3, PFMETType1, LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonPt0, LightLeptonPt1, LightLeptonPt2, LightLeptonPt3, PULightLeptonFlavorType, LightLeptonFlavorType3D, LightLeptonFlavorType4D,GenPileUpInteractionsTrue, LightLeptonNonFakeTypeA, LightLeptonN );
@@ -732,10 +746,12 @@ void makeSkims_TMVA(){
 
 	}
 
+	TTree *analysisTree;
+	analysisTree = shortTree->CopyTree("(LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0&&L4VLL>0)||((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)");
 	    //Copy only events in shortTree satisfying SR selections fro and copy them into analysis Tree
-	TTree *analysisTree = shortTree->CopyTree("((L4OSSF1||L4OSSF2)&&L4VLL==1&&LightLeptonPairDR[0]>0.4&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)||((L3AboveZ||L3OnZ||L3BelowZ||L3OSSF0)&&LightLeptonPairDR[0]>0.4&&LightLeptonN[0]==3&&SingleIsoLeptonTrigAccept2016>0&&LowMassVeto==1&&HasTriggerMatch_2016>0)");
+
 	analysisTree->Write();
 	endfile->Close(); 
-
+	cout<<countcheck<<endl;
 
 }
