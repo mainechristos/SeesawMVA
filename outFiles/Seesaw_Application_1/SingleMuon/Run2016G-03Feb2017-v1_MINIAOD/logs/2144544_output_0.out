@@ -1,9 +1,0 @@
-/cvmfs/cms.cern.ch
-Run2016G-03Feb2017-v1_MINIAOD
-
-Processing /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/SingleMuon/Run2016G-03Feb2017-v1_MINIAOD/Seesaw_Application_SingleMuon.C...
-
-==> Start TMVAClassificationApplication
-                         : Booking "BDTG method" of type "BDT" from /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/dl/weights/92X_Seesaw_test_BDT.weights.xml.
-<FATAL>                          : Dataset[Default] : You declared 36 variables in the Reader while there are 31 variables declared in the file
-***> abort program execution

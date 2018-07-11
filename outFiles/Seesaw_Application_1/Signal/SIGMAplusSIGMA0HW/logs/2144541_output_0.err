@@ -1,6 +1,0 @@
-mkdir: cannot create directory `/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Signal': File exists
-mkdir: cannot create directory `/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Signal/SIGMAplusSIGMA0HW': File exists
-Error in <TGClient::TGClient>: can't open display "localhost:0.0", switching to batch mode...
- In case you run from a remote ssh session, reconnect with ssh -Y
-terminate called after throwing an instance of 'std::runtime_error'
-  what():  FATAL error
