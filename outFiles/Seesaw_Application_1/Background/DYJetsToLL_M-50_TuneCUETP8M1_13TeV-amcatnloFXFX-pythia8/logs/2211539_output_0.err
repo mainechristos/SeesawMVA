@@ -1,0 +1,32 @@
+mkdir: cannot create directory `/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background': File exists
+mkdir: cannot create directory `/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8': File exists
+Error in <TGClient::TGClient>: can't open display "localhost:0.0", switching to batch mode...
+ In case you run from a remote ssh session, reconnect with ssh -Y
+Error in <TFile::TFile>: file /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/analysisTree.root does not exist
+#0  0x0000003c848ac82e in waitpid () from /lib64/libc.so.6
+#1  0x0000003c8483e479 in do_system () from /lib64/libc.so.6
+#2  0x00002b3922775d68 in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.04-ghjeda/lib/libCore.so
+#3  0x00002b392385cbf5 in cling::MultiplexInterpreterCallbacks::PrintStackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.04-ghjeda/lib/libCling.so
+#4  0x00002b392385c6b8 in cling_runtime_internal_throwIfInvalidPointer () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.04-ghjeda/lib/libCling.so
+#5  0x00002b392f5a80df in ?? ()
+#6  0x0000000000000001 in ?? ()
+#7  0x00007ffc741b29e8 in ?? ()
+#8  0x0000000002f23610 in ?? ()
+#9  0x00002b392504820d in (anonymous namespace)::ELFObjectWriter::writeObject(llvm::MCAssembler&, llvm::MCAsmLayout const&) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.04-ghjeda/lib/libCling.so
+#10 0x00007ffc741b2c60 in ?? ()
+#11 0x0000000000000006 in ?? ()
+#12 0x00007ffc741b2c60 in ?? ()
+#13 0x0000000000000035 in ?? ()
+#14 0x00000000027deaf0 in ?? ()
+#15 0x0000000035b83a7f in ?? ()
+#16 0x0000003c84409fe2 in do_lookup_x () from /lib64/ld-linux-x86-64.so.2
+#17 0x0000003c8440a26a in _dl_lookup_symbol_x () from /lib64/ld-linux-x86-64.so.2
+#18 0x0000003c849272a6 in do_sym () from /lib64/libc.so.6
+#19 0x00002b3922899a00 in ?? () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/gcc/6.3.0/lib64/libstdc++.so.6
+#20 0x0000000000000000 in ?? ()
+Error in <HandleInterpreterException>: Trying to dereference null pointer or trying to call routine taking non-null arguments.
+Execution of your code was aborted.
+In file included from input_line_8:1:
+/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/Seesaw_Application_bg.C:123:72: warning: null passed to a callee that requires a non-null argument [-Wnonnull]
+   std::cout << "--- TMVAClassificationApp    : Using input file: " << input->GetName() << std::endl;
+                                                                       ^~~~~

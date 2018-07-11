@@ -1,0 +1,18 @@
+mkdir: cannot create directory `/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background': File exists
+mkdir: cannot create directory `/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2': File exists
+Error in <TGClient::TGClient>: can't open display "localhost:0.0", switching to batch mode...
+ In case you run from a remote ssh session, reconnect with ssh -Y
+Error in <TFile::TFile>: file /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2/analysisTree.root does not exist
+#0  0x0000003c38aac82e in waitpid () from /lib64/libc.so.6
+#1  0x0000003c38a3e479 in do_system () from /lib64/libc.so.6
+#2  0x00002b15068b6d68 in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.04-ghjeda/lib/libCore.so
+#3  0x00002b150799dbf5 in cling::MultiplexInterpreterCallbacks::PrintStackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.04-ghjeda/lib/libCling.so
+#4  0x00002b150799d6b8 in cling_runtime_internal_throwIfInvalidPointer () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.10.04-ghjeda/lib/libCling.so
+#5  0x00002b15136e909c in ?? ()
+#6  0x0000000000000000 in ?? ()
+Error in <HandleInterpreterException>: Trying to dereference null pointer or trying to call routine taking non-null arguments.
+Execution of your code was aborted.
+In file included from input_line_8:1:
+/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_ext2/Seesaw_Application_bg.C:111:72: warning: null passed to a callee that requires a non-null argument [-Wnonnull]
+   std::cout << "--- TMVAClassificationApp    : Using input file: " << input->GetName() << std::endl;
+                                                                       ^~~~~

@@ -1,0 +1,21 @@
+/cvmfs/cms.cern.ch
+Run2016H-03Feb2017_ver3-v1_MINIAOD
+
+Processing /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/SingleMuon/Run2016H-03Feb2017_ver3-v1_MINIAOD/Seesaw_Application_SingleMuon.C...
+
+==> Start TMVAClassificationApplication
+                         : Booking "BDTG method" of type "BDT" from /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/dl/weights/92X_Seesaw_transformations_Gaussian.weights.xml.
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "Gaussian" of type: "BDT"
+--- TMVAClassificationApp    : Using input file: /cms/mchristos/ANN/Seesaw/2016/92X/Data/SingleMuon/Run2016H-03Feb2017_ver3-v1_MINIAOD/analysisTree_3L.root
+--- Select Data sample
+--- Processing: 1717 events
+--- ... Processing event: 0
+--- ... Processing event: 1000
+--- End of event loop: Real time 0:00:31, CP time 4.630
+Printing out all passed events... 
+BDT: 
+427	 passed events
+==> TMVAClassificationApplication is done!
+

@@ -1,0 +1,55 @@
+000 (2144549.035.000) 06/28 00:53:26 Job submitted from host: <192.168.1.109:9465>
+...
+001 (2144549.035.000) 06/28 00:53:46 Job executing on host: <192.168.1.47:9610>
+...
+006 (2144549.035.000) 06/28 00:53:54 Image size of job updated: 76852
+	13  -  MemoryUsage of job (MB)
+	13208  -  ResidentSetSize of job (KB)
+...
+006 (2144549.035.000) 06/28 00:58:54 Image size of job updated: 1035464
+	581  -  MemoryUsage of job (MB)
+	594072  -  ResidentSetSize of job (KB)
+...
+006 (2144549.035.000) 06/28 01:03:54 Image size of job updated: 1049764
+	624  -  MemoryUsage of job (MB)
+	638256  -  ResidentSetSize of job (KB)
+...
+006 (2144549.035.000) 06/28 01:08:55 Image size of job updated: 1049764
+	624  -  MemoryUsage of job (MB)
+	638524  -  ResidentSetSize of job (KB)
+...
+006 (2144549.035.000) 06/28 01:13:55 Image size of job updated: 1049764
+	624  -  MemoryUsage of job (MB)
+	638896  -  ResidentSetSize of job (KB)
+...
+006 (2144549.035.000) 06/28 01:18:55 Image size of job updated: 1049764
+	624  -  MemoryUsage of job (MB)
+	638912  -  ResidentSetSize of job (KB)
+...
+006 (2144549.035.000) 06/28 01:23:56 Image size of job updated: 1049764
+	625  -  MemoryUsage of job (MB)
+	638988  -  ResidentSetSize of job (KB)
+...
+006 (2144549.035.000) 06/28 01:28:57 Image size of job updated: 1049764
+	625  -  MemoryUsage of job (MB)
+	638992  -  ResidentSetSize of job (KB)
+...
+006 (2144549.035.000) 06/28 01:33:57 Image size of job updated: 1049764
+	625  -  MemoryUsage of job (MB)
+	639012  -  ResidentSetSize of job (KB)
+...
+005 (2144549.035.000) 06/28 01:37:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:02:42, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:02:42, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        2        2  28380207
+	   Memory (MB)          :      625        1      4033
+...

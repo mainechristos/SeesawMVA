@@ -1,0 +1,15 @@
+/cvmfs/cms.cern.ch
+TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8
+
+Processing /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background/TTTT_TuneCUETP8M2T4_13TeV-amcatnlo-pythia8/Seesaw_Application_bg.C...
+
+==> Start TMVAClassificationApplication
+                         : Booking "BDTG method" of type "BDT" from /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/dl/weights/92X_Seesaw_4L_trans_Gaussian.weights.xml.
+                         : Dataset[Default] : ERROR in <ReadVariablesFromXML>
+                         : The definition (or the order) of the variables found in the input file is
+                         : not the same as the one declared in the Reader (which is necessary for the
+                         : correct working of the method):
+                         :    var #17 declared in Reader: PtRatio4(LightLeptonPt[3],LightLeptonPt[0],LightLeptonPt[1],LightLeptonPt[2])
+                         :    var #17 declared in file  : PtRatio4(LightLeptonPt[3],LightLeptonPt[1],LightLeptonPt[2],LightLeptonPt[0])
+<FATAL>                          : The expression declared to the Reader needs to be checked (name or order are wrong)
+***> abort program execution

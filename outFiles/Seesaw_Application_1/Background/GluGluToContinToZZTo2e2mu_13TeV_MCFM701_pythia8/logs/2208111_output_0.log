@@ -1,0 +1,51 @@
+000 (2208111.014.000) 07/06 15:00:49 Job submitted from host: <192.168.1.109:9465>
+...
+001 (2208111.014.000) 07/06 15:10:14 Job executing on host: <192.168.1.67:9110>
+...
+006 (2208111.014.000) 07/06 15:10:23 Image size of job updated: 2
+	3  -  MemoryUsage of job (MB)
+	2096  -  ResidentSetSize of job (KB)
+...
+006 (2208111.014.000) 07/06 15:15:23 Image size of job updated: 1057212
+	566  -  MemoryUsage of job (MB)
+	578772  -  ResidentSetSize of job (KB)
+...
+006 (2208111.014.000) 07/06 15:20:23 Image size of job updated: 1058724
+	567  -  MemoryUsage of job (MB)
+	579704  -  ResidentSetSize of job (KB)
+...
+006 (2208111.014.000) 07/06 15:25:24 Image size of job updated: 1060032
+	568  -  MemoryUsage of job (MB)
+	580624  -  ResidentSetSize of job (KB)
+...
+006 (2208111.014.000) 07/06 15:30:25 Image size of job updated: 1061700
+	569  -  MemoryUsage of job (MB)
+	582244  -  ResidentSetSize of job (KB)
+...
+006 (2208111.014.000) 07/06 15:35:25 Image size of job updated: 1063920
+	571  -  MemoryUsage of job (MB)
+	584548  -  ResidentSetSize of job (KB)
+...
+006 (2208111.014.000) 07/06 15:40:26 Image size of job updated: 1066504
+	574  -  MemoryUsage of job (MB)
+	586928  -  ResidentSetSize of job (KB)
+...
+006 (2208111.014.000) 07/06 15:43:19 Image size of job updated: 1068132
+	574  -  MemoryUsage of job (MB)
+	586928  -  ResidentSetSize of job (KB)
+...
+005 (2208111.014.000) 07/06 15:43:19 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:12:58, Sys 0 00:00:19  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:12:58, Sys 0 00:00:19  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated
+	   Cpus                 :                 1         1
+	   Disk (KB)            :        2        2  18507949
+	   Memory (MB)          :      574        1      4033
+...

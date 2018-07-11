@@ -1,0 +1,4 @@
+mkdir: cannot create directory `/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background': File exists
+mkdir: cannot create directory `/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1': File exists
+Error in <TGClient::TGClient>: can't open display "localhost:0.0", switching to batch mode...
+ In case you run from a remote ssh session, reconnect with ssh -Y

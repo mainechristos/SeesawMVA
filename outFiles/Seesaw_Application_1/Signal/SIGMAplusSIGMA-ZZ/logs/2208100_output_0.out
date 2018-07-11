@@ -1,0 +1,27 @@
+/cvmfs/cms.cern.ch
+SIGMAplusSIGMA-ZZ
+
+Processing /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Signal/SIGMAplusSIGMA-ZZ/Seesaw_Application_signal.C...
+
+==> Start TMVAClassificationApplication
+                         : Booking "BDTG method" of type "BDT" from /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/dl/weights/92X_Seesaw_4L_trans_Gaussian.weights.xml.
+<HEADER> DataSetInfo              : [Default] : Added class "Signal"
+<HEADER> DataSetInfo              : [Default] : Added class "Background"
+                         : Booked classifier "Gaussian" of type: "BDT"
+--- TMVAClassificationApp    : Using input file: /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZZ/analysisTree.root
+--- Select Signal sample
+--- Processing: 7103 events
+--- ... Processing event: 0
+--- ... Processing event: 1000
+--- ... Processing event: 2000
+--- ... Processing event: 3000
+--- ... Processing event: 4000
+--- ... Processing event: 5000
+--- ... Processing event: 6000
+--- ... Processing event: 7000
+--- End of event loop: Real time 0:00:37, CP time 17.180
+Printing out all passed events... 
+BDT: 
+3029	 passed events
+==> TMVAClassificationApplication is done!
+
