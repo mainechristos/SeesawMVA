@@ -10,7 +10,7 @@
 #include "TObjString.h"
 #include "TSystem.h"
 #include "TROOT.h"
-#include "/cms/mchristos/ANN/Seesaw/2016/92X/addAliases.C"
+#include "addAliases.C"
 #include "TMVA/TMVAGui.h"
 #include "TMVA/Tools.h"
 
@@ -53,7 +53,7 @@ void Seesaw_Training_4L( TString myMethodList = "" )
       }
    }
 
-   TString outfileName( "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/class_perf/92X_Seesaw_4L_optimized.root" );
+   TString outfileName( "class_perf/92X_Seesaw_4L_optimized.root" );
    TFile* outputFile = TFile::Open( outfileName, "RECREATE" );
 
    TMVA::Factory *factory = new TMVA::Factory( "92X_Seesaw_4L_optimized", outputFile,
@@ -184,7 +184,7 @@ void Seesaw_Training_4L( TString myMethodList = "" )
       ss >> k_factor;         //reads process name and other numbers into respective variables
 
 
-      std::string in = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/"+process+"/shortTree_4L.root";
+      std::string in = "TMVA/Signal/"+process+"/shortTree_4L.root";
       const char *sig_name = in.c_str();
       TFile *sig_input = TFile::Open( sig_name );     //opens signal file matching process name
 
@@ -224,7 +224,7 @@ void Seesaw_Training_4L( TString myMethodList = "" )
 
 
    
-   std::ifstream infileb("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/backgrounds_TMVA_4L.txt");
+   std::ifstream infileb("backgrounds_TMVA_4L.txt");
    std::string lineb;
    std::getline(infileb, lineb);    //throws away first line which includes titles
 
@@ -244,7 +244,7 @@ void Seesaw_Training_4L( TString myMethodList = "" )
       
       // if file is ttbar or dy, it is store in a different directory than all other MCs!
       
-      in = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/"+bg+"/shortTree_4L.root";
+      in = "TMVA/Backgrounds/"+bg+"/shortTree_4L.root";
       const char *back_name = in.c_str();
       TFile *back_input = TFile::Open( back_name ); 
       

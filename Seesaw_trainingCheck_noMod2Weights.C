@@ -186,8 +186,8 @@ void Seesaw_trainingCheck_noMod2Weights( TString myMethodList = "" )
    
 
 
-   std::string infileb_3L = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/backgrounds_TMVA.txt";
-   std::string infileb_4L = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/backgrounds_TMVA_4L.txt";
+   std::string infileb_3L = "backgrounds_TMVA.txt";
+   std::string infileb_4L = "backgrounds_TMVA_4L.txt";
 
    const char *bg_name;
    

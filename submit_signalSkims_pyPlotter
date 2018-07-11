@@ -1,168 +1,168 @@
 universe = vanilla
 +AccountingGroup = "group_rutgers.mchristos"
 Requirements = (Arch == "X86_64")
-Executable = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/run_signalSkims_pyPlotter.sh
+Executable = run_signalSkims_pyPlotter.sh
 should_transfer_files = NO
 Notification=never
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0WW 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0WZ 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0WH 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0ZW 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0ZZ 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0ZH 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0HW 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0HZ 
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0HH 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0WW 
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0WZ 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0WH 
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0ZW 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0ZZ 
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0ZH 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0HW 
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0HZ 
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0HH 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-WW
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-WZ 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-WH 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-ZW
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-ZZ 
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-ZH 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-HW 
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-HZ 
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.log
+output = pyPlotter/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.out
+error = pyPlotter/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.err
+log = pyPlotter/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-HH 
 queue 

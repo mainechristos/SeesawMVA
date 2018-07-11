@@ -4,6 +4,6 @@
 while read p 
 do
   echo $p
-  mkdir /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background/$p
-  mkdir /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_1/Background/$p/logs/
+  mkdir outFiles/Seesaw_Application_1/Background/$p
+  mkdir outFiles/Seesaw_Application_1/Background/$p/logs/
 done </cms/mchristos/ANN/Seesaw/2016/92X/backgrounds.txt

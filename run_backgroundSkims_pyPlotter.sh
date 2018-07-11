@@ -8,10 +8,10 @@ cd /users/h2/mchristos/software/CMSSW_7_6_3_patch2
 export SCRAM_ARCH=slc6_amd64_gcc493
 export DISPLAY=localhost:0.0
 eval `scramv1 runtime -sh`
-mkdir /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds 
+cd -
+mkdir pyPlotter/Backgrounds 
 echo $1
-mkdir /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/$1
-cd /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/$1
-cp /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/makeSkims_pyPlotter.C /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/$1/makeSkims_pyPlotter.C
-sed -i "s/QQQ/$1/g;" /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/$1/makeSkims_pyPlotter.C
-root -l -q /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/$1/makeSkims_pyPlotter.C
+mkdir pyPlotter/Backgrounds/$1
+cp makeSkims_pyPlotter.C pyPlotter/Backgrounds/$1/makeSkims_pyPlotter.C
+sed -i "s/QQQ/$1/g;" pyPlotter/Backgrounds/$1/makeSkims_pyPlotter.C
+root -l -q pyPlotter/Backgrounds/$1/makeSkims_pyPlotter.C

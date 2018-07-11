@@ -32,7 +32,7 @@ void makeSkims_pyPlotter_signal(){
 	std::cout << "--- Using input file: " << input->GetName() << std::endl;
 	cout<<endl;
 	float fileWeight;
-	float xsec = VVV;
+	float xsec = 1;
 	TTree *tree = (TTree*)input->Get("rootTupleTreeVeryLoose/tree");
 	addAliasedVars(tree);
 	TTreeReader myReader(tree);

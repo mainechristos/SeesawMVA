@@ -107,12 +107,9 @@ void runData(TString ifile = ""){
    
    // --- Book the MVA methods
 
-   TString dir    = "/cms/mchristos/ANN/Seesaw/2016/92X/weights/";
-   TString prefix = "2017_TMVA_optimized";
 
 
-
-   reader->BookMVA( "BDTG method",  "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/dl/weights/92X_Seesaw_optimized1_a_BDT1.weights.xml");
+   reader->BookMVA( "BDTG method",  "dl/weights/92X_Seesaw_optimized1_a_BDT1.weights.xml");
 
    vector<double>  vecBDTG; 
   
@@ -162,7 +159,7 @@ void runData(TString ifile = ""){
    
 
 
-   TFile *endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/outFiles/Seesaw_Application_VVV/SingleElectron/QQQ/BDTtree.root","RECREATE");   
+   TFile *endfile = new TFile("outFiles/Seesaw_Application_VVV/SingleElectron/QQQ/BDTtree.root","RECREATE");   
    
    endfile->cd();
    endfile->mkdir("veryLooseDileptonEventFilter/");

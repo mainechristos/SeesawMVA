@@ -1,168 +1,168 @@
 universe = vanilla
 +AccountingGroup = "group_rutgers.mchristos"
 Requirements = (Arch == "X86_64")
-Executable = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/run_signalSkims_TMVA.sh
+Executable = run_signalSkims_TMVA.sh
 should_transfer_files = NO
 Notification=never
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA0WW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0WW 3.277374*0.486364998319*0.223086574655*1.32265039022 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA0WZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0WZ 3.277374*0.19829900402*0.0596553315895*1.32265039022 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA0WH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0WH 3.277374*0.0128120867499*0.106311026435*1.32265039022 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA0ZW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0ZW 3.277374*0.198176955087*0.586143187067*1.32265039022 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA0ZZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0ZZ 3.277374*0.0807963936981*0.242069486405*1.32265039022 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA0ZH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0ZH 3.277374*0.00522064311244*0.322326125073*1.32265039022 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA0HW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0HW 3.277374*0.0127815745167*0.704941513488*1.32265039022 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA0HZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0HZ 3.277374*0.00521148944246*0.305796252927*1.32265039022 3
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA0HH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA0HH 3.277374*0.000336855055297*0.421648550725*1.32265039022 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMA-SIGMA0WW/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0WW 1.9367122*0.486391318235*0.223673036093*1.31423243991 3
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMA-SIGMA0WZ/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0WZ 1.9367122*0.198274167943*0.059296875*1.31423243991 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMA-SIGMA0WH/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0WH 1.9367122*0.0128103700694*0.105965336558*1.31423243991 3
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMA-SIGMA0ZW/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0ZW 1.9367122*0.198170900147*0.585982282439*1.31423243991 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMA-SIGMA0ZZ/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0ZZ 1.9367122*0.0808070502163*0.240766773163*1.31423243991 3
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMA-SIGMA0ZH/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0ZH 1.9367122*0.00522018707787*0.323639960435*1.31423243991 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMA-SIGMA0HW/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0HW 1.9367122*0.0127793897307*0.705454545455*1.31423243991 3
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMA-SIGMA0HZ/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0HZ 1.9367122*0.00520986029829*0.306045589693*1.31423243991 3
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMA-SIGMA0HH/logs/$(Cluster)_output_0.log
 arguments = SIGMA-SIGMA0HH 1.9367122*0.000336756282116*0.420116528672*1.31423243991 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA-WW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-WW 2.595779*0.488100104054*0.0268429360695*1.33805304689 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA-WZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-WZ 2.595779*0.197590010552*0.208227724703*1.33805304689 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA-WH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-WH 2.595779*0.0127399135288*0.320532204415*1.33805304689 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA-ZW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-ZW 2.595779*0.197590010552*0.208812634042*1.33805304689 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA-ZZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-ZZ 2.595779*0.0805153289244*0.47990430622*1.33805304689 3
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA-ZH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-ZH 2.595779*0.00519304609522*0.635608308605*1.33805304689 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA-HW/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-HW 2.595779*0.0127437659369*0.319528415961*1.33805304689 3
 queue
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA-HZ/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-HZ 2.595779*0.00519304609522*0.633160237389*1.33805304689 3
 queue 
 
-output = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.out
-error = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.err
-log = /cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.log
+output = TMVA/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.out
+error = TMVA/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.err
+log = TMVA/Signal/SIGMAplusSIGMA-HH/logs/$(Cluster)_output_0.log
 arguments = SIGMAplusSIGMA-HH 2.595779*0.00033477426237*0.731760644419*1.33805304689 3
 queue 
