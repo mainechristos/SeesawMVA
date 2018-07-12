@@ -24,7 +24,7 @@
 
 using namespace TMVA;
 
-void runBackground(TString ifile = ""){
+void runData(TString ifile = ""){
 
    gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/customFunctions.C");
    gROOT->ProcessLineSync(".L /cms/mchristos/software/pyPlotter/tools/customFudgeFactors_2016.C");
@@ -46,12 +46,12 @@ void runBackground(TString ifile = ""){
    Float_t LightLeptonEta0, LightLeptonEta1, LightLeptonEta2, LightLeptonEta3, LightLeptonMass, LightLeptonLeptonDRmin0, LightLeptonLeptonDRmin1, LightLeptonLeptonDRmin2;
    Float_t JetN;
    Int_t LightLeptonN, LightLeptonOnZN, ElectronN, LightLeptonTightType3D, MuonN, PassBadChargedCandidateFilter, PassBadPFMuonFilter;
-   Float_t PtRatio1, PtRatio2, PtRatio3, DPhi1, DPhi2,  DPhi3, DPhi4, DPhi5, DPhi6, LightLeptonDXY0, LightLeptonDXY1, LightLeptonDXY2; 
+   Float_t PtRatio1, PtRatio2, PtRatio3, DPhi1, DPhi2, DPhi3, DPhi4, DPhi5, DPhi6, LightLeptonDXY0, LightLeptonDXY1, LightLeptonDXY2; 
    Float_t metHtRatio, metStRatio, metLtRatio, metHtSquaredRatio, metSquaredStRatio, metLtSquaredRatio, metHtQuadRatio, metQuadStRatio, metLtQuadRatio, HT, ST, LightLeptonBestMSSSF, LightLeptonPairPt;
    Float_t PtRatio4L1, PtRatio4L2, PtRatio4L3, PtRatio4L4;
    Float_t BJetN;
    
-reader->AddVariable("LightLeptonLT := Alt$(LightLeptonLT3[0],0)", &LightLeptonLT3);
+   reader->AddVariable("LightLeptonLT := Alt$(LightLeptonLT3[0],0)", &LightLeptonLT3);
    reader->AddVariable("PFMETType1 := Alt$(PFMETType1[0],0)", &PFMETType1);
    reader->AddVariable("LightLeptonPt0 := Alt$(LightLeptonPt[0],0)", &LightLeptonPt0 );
    reader->AddVariable("LightLeptonPt1 := Alt$(LightLeptonPt[1],0)",&LightLeptonPt1);
@@ -122,7 +122,7 @@ reader->AddVariable("LightLeptonLT := Alt$(LightLeptonLT3[0],0)", &LightLeptonLT
    // --- Event loop
 
    // Prepare the event tree
-   std::cout << "--- Select Background sample" << std::endl;
+   std::cout << "--- Select Data sample" << std::endl;
    TTree *tree = (TTree*)input->Get("rootTupleTreeVeryLoose/tree");
    TTreeReader myReader(tree);
    TH1I *histo= new TH1I();
@@ -159,7 +159,7 @@ reader->AddVariable("LightLeptonLT := Alt$(LightLeptonLT3[0],0)", &LightLeptonLT
    
 
 
-   TFile *endfile = new TFile("outFiles/Seesaw_Application_VVV/Background/QQQ/BDTtree.root","RECREATE");   
+   TFile *endfile = new TFile("outFiles/Seesaw_Application_VVV/SingleMuon/QQQ/BDTtree.root","RECREATE");   
    
    endfile->cd();
    endfile->mkdir("veryLooseDileptonEventFilter/");
@@ -526,7 +526,7 @@ reader->AddVariable("LightLeptonLT := Alt$(LightLeptonLT3[0],0)", &LightLeptonLT
 
 }
 
-void Seesaw_Application_bg( TString myMethodList = "" ) 
+void Seesaw_Application_SingleMuon_3L( TString myMethodList = "" ) 
 {   
 
    TMVA::Tools::Instance();
@@ -536,10 +536,10 @@ void Seesaw_Application_bg( TString myMethodList = "" )
    std::cout << std::endl;
    std::cout << "==> Start TMVAClassificationApplication" << std::endl;
 
-   TString back_name = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Backgrounds/QQQ/analysisTree.root";
+   TString back_name = "/cms/mchristos/ANN/Seesaw/2016/92X/Data/SingleMuon/QQQ/analysisTree_3L.root";
 
 
-   runBackground(back_name);
+   runData(back_name);
    std::cout << "==> TMVAClassificationApplication is done!" << endl << std::endl;
 } 
 
