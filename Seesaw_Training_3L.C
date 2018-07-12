@@ -175,7 +175,7 @@ void Seesaw_Training_3L( TString myMethodList = "" )
       ss >> k_factor;         //reads process name and other numbers into respective variables
 
 
-      std::string in = "TMVA/Signal/"+process+"/shortTree_3L.root";
+      std::string in = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Signal/"+process+"/shortTree_3L.root";
       const char *sig_name = in.c_str();
       TFile *sig_input = TFile::Open( sig_name );     //opens signal file matching process name
 
@@ -235,7 +235,7 @@ void Seesaw_Training_3L( TString myMethodList = "" )
       
       // if file is ttbar or dy, it is store in a different directory than all other MCs!
       
-      in = "TMVA/Backgrounds/"+bg+"/shortTree_3L.root";
+      in = "/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/"+bg+"/shortTree_3L.root";
       const char *back_name = in.c_str();
       TFile *back_input = TFile::Open( back_name ); 
       
