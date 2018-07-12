@@ -109,7 +109,7 @@ void runData(TString ifile = ""){
 
 
 
-   reader->BookMVA( "BDTG method",  "dl/weights/92X_Seesaw_optimized1_a_BDT1.weights.xml");
+   reader->BookMVA( "BDTG method",  "dl/weights/92X_Seesaw_3L_optimized_BDT.weights.xml");
 
    vector<double>  vecBDTG; 
   
