@@ -12,7 +12,7 @@ cd -
 mkdir outFiles/Seesaw_Application_$1/SingleMuon 
 echo $2
 mkdir outFiles/Seesaw_Application_$1/SingleMuon/$2
-cp Seesaw_Application_SingleMuon.C outFiles/Seesaw_Application_$1/SingleMuon/$2/Seesaw_Application_SingleMuon.C
-sed -i "s/QQQ/$2/g;" outFiles/Seesaw_Application_$1/SingleMuon/$2/Seesaw_Application_SingleMuon.C
-sed -i "s/VVV/$1/g;" outFiles/Seesaw_Application_$1/SingleMuon/$2/Seesaw_Application_SingleMuon.C
-root -l -q outFiles/Seesaw_Application_$1/SingleMuon/$2/Seesaw_Application_SingleMuon.C
+cp Seesaw_Application_SingleMuon_$3L.C outFiles/Seesaw_Application_$1/SingleMuon/$2/Seesaw_Application_SingleMuon_$3L.C
+sed -i "s/QQQ/$2/g;" outFiles/Seesaw_Application_$1/SingleMuon/$2/Seesaw_Application_SingleMuon_$3L.C
+sed -i "s/VVV/$1/g;" outFiles/Seesaw_Application_$1/SingleMuon/$2/Seesaw_Application_SingleMuon_$3L.C
+root -l -q outFiles/Seesaw_Application_$1/SingleMuon/$2/Seesaw_Application_SingleMuon_$3L.C

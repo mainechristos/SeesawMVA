@@ -12,7 +12,7 @@ cd -
 mkdir outFiles/Seesaw_Application_$1/Signal 
 echo $2
 mkdir outFiles/Seesaw_Application_$1/Signal/$2
-cp Seesaw_Application_signal.C outFiles/Seesaw_Application_$1/Signal/$2/Seesaw_Application_signal.C
-sed -i "s/QQQ/$2/g;" outFiles/Seesaw_Application_$1/Signal/$2/Seesaw_Application_signal.C
-sed -i "s/VVV/$1/g;" outFiles/Seesaw_Application_$1/Signal/$2/Seesaw_Application_signal.C
-root -l -q outFiles/Seesaw_Application_$1/Signal/$2/Seesaw_Application_signal.C
+cp Seesaw_Application_signal_$3L.C outFiles/Seesaw_Application_$1/Signal/$2/Seesaw_Application_signal_$3L.C
+sed -i "s/QQQ/$2/g;" outFiles/Seesaw_Application_$1/Signal/$2/Seesaw_Application_signal_$3L.C
+sed -i "s/VVV/$1/g;" outFiles/Seesaw_Application_$1/Signal/$2/Seesaw_Application_signal_$3L.C
+root -l -q outFiles/Seesaw_Application_$1/Signal/$2/Seesaw_Application_signal_$3L.C
