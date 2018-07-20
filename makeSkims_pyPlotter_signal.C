@@ -45,7 +45,7 @@ void makeSkims_pyPlotter_signal(){
 
 
 		//File where final analysis tree will be stored
-	TFile *endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/pyPlotter/Signal/QQQ/analysisTree.root","RECREATE");
+	TFile *endfile = new TFile("pyPlotter/Signal/QQQ/analysisTree.root","RECREATE");
 
 	endfile->cd();
    	endfile->mkdir("veryLooseDileptonEventFilter/");

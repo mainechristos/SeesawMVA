@@ -206,10 +206,10 @@ void makeSkims_TMVA(){
 		//File where final analysis tree will be stored
 	TFile *endfile;
 	if(nleptons==4){
-		endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/QQQ/shortTree_4L.root","RECREATE");
+		endfile = new TFile("TMVA/Backgrounds/QQQ/shortTree_4L.root","RECREATE");
 	}
 	else if(nleptons==3){
-		endfile = new TFile("/cms/mchristos/ANN/Seesaw/2016/92X/TMVAskims/TMVA/Backgrounds/QQQ/shortTree_3L.root","RECREATE");
+		endfile = new TFile("TMVA/Backgrounds/QQQ/shortTree_3L.root","RECREATE");
 	}
 
 		//Clone tree shortTree from original tree which will have only activated branches. Add weight branch to store by-event weights
