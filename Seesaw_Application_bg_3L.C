@@ -143,8 +143,8 @@ reader->AddVariable("LightLeptonLT := Alt$(LightLeptonLT3[0],0)", &LightLeptonLT
    TTreeReaderValue<vector<Int_t>> inJetN(myReader, "JetN");
    TTreeReaderValue<vector<Float_t>> inLightLeptonLeptonDRmin(myReader, "LightLeptonLeptonDRmin");
    TTreeReaderValue<vector<Float_t>> inLightLeptonMass(myReader, "LightLeptonMass");
-   TTreeReaderValue<vector<Float_t>> inLightLeptonLT3(myReader, "LightLeptonLT3");
    TTreeReaderValue<vector<Float_t>> inLightLeptonLT4(myReader, "LightLeptonLT4");
+   TTreeReaderValue<vector<Float_t>> inLightLeptonLT3(myReader, "LightLeptonLT3");
    TTreeReaderValue<vector<Float_t>> inLightLeptonMT3(myReader, "LightLeptonMT3");
    TTreeReaderValue<vector<Int_t>> inLightLeptonN(myReader, "LightLeptonN");
    TTreeReaderValue<vector<Int_t>> inLightLeptonOnZN(myReader, "LightLeptonOnZN");
@@ -329,10 +329,10 @@ reader->AddVariable("LightLeptonLT := Alt$(LightLeptonLT3[0],0)", &LightLeptonLT
          LightLeptonLT3 = inLightLeptonLT3->at(0);
       }
 
-      if(inLightLeptonLT4->empty()){
-         LightLeptonLT4 = 0;
+      if(inLightLeptonLT3->empty()){
+         LightLeptonLT3 = 0;
       }else{
-         LightLeptonLT4 = inLightLeptonLT4->at(0);
+         LightLeptonLT3 = inLightLeptonLT3->at(0);
       }
 
       if(inJetN->empty()){
@@ -471,19 +471,19 @@ reader->AddVariable("LightLeptonLT := Alt$(LightLeptonLT3[0],0)", &LightLeptonLT
       LightLeptonDXY1 = LightLeptonDXY(1, MuonDXY0,MuonDXY1,MuonDXY2, ElectronDXY0,ElectronDXY1,ElectronDXY2, LightLeptonFlavor0, LightLeptonNativeIndex0);
       LightLeptonDXY2 = LightLeptonDXY(2, MuonDXY0,MuonDXY1,MuonDXY2, ElectronDXY0,ElectronDXY1,ElectronDXY2, LightLeptonFlavor0, LightLeptonNativeIndex0);
 
-      ST=LightLeptonLT4+PFMETType1+HT;
+      ST=LightLeptonLT3+PFMETType1+HT;
 
       metHtRatio=metRatio(PFMETType1,HT);
       metStRatio=metRatio(PFMETType1,ST);
-      metLtRatio=metRatio(PFMETType1,LightLeptonLT4);
+      metLtRatio=metRatio(PFMETType1,LightLeptonLT3);
 
       metHtSquaredRatio=metSquaredRatio(PFMETType1,HT);
       metSquaredStRatio=metSquaredRatio(PFMETType1,ST);
-      metLtSquaredRatio=metSquaredRatio(PFMETType1,LightLeptonLT4);
+      metLtSquaredRatio=metSquaredRatio(PFMETType1,LightLeptonLT3);
 
       metHtQuadRatio=metQuadRatio(PFMETType1,HT);
       metQuadStRatio=metQuadRatio(PFMETType1,ST);
-      metLtQuadRatio=metQuadRatio(PFMETType1,LightLeptonLT4);
+      metLtQuadRatio=metQuadRatio(PFMETType1,LightLeptonLT3);
 
       BJetN = 0;
       int countEta=0;
@@ -542,4 +542,3 @@ void Seesaw_Application_bg_3L( TString myMethodList = "" )
    runBackground(back_name);
    std::cout << "==> TMVAClassificationApplication is done!" << endl << std::endl;
 } 
-

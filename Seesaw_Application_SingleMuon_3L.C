@@ -329,10 +329,10 @@ void runData(TString ifile = ""){
          LightLeptonLT3 = inLightLeptonLT3->at(0);
       }
 
-      if(inLightLeptonLT4->empty()){
-         LightLeptonLT4 = 0;
+      if(inLightLeptonLT3->empty()){
+         LightLeptonLT3 = 0;
       }else{
-         LightLeptonLT4 = inLightLeptonLT4->at(0);
+         LightLeptonLT3 = inLightLeptonLT3->at(0);
       }
 
       if(inJetN->empty()){
@@ -471,19 +471,19 @@ void runData(TString ifile = ""){
       LightLeptonDXY1 = LightLeptonDXY(1, MuonDXY0,MuonDXY1,MuonDXY2, ElectronDXY0,ElectronDXY1,ElectronDXY2, LightLeptonFlavor0, LightLeptonNativeIndex0);
       LightLeptonDXY2 = LightLeptonDXY(2, MuonDXY0,MuonDXY1,MuonDXY2, ElectronDXY0,ElectronDXY1,ElectronDXY2, LightLeptonFlavor0, LightLeptonNativeIndex0);
 
-      ST=LightLeptonLT4+PFMETType1+HT;
+      ST=LightLeptonLT3+PFMETType1+HT;
 
       metHtRatio=metRatio(PFMETType1,HT);
       metStRatio=metRatio(PFMETType1,ST);
-      metLtRatio=metRatio(PFMETType1,LightLeptonLT4);
+      metLtRatio=metRatio(PFMETType1,LightLeptonLT3);
 
       metHtSquaredRatio=metSquaredRatio(PFMETType1,HT);
       metSquaredStRatio=metSquaredRatio(PFMETType1,ST);
-      metLtSquaredRatio=metSquaredRatio(PFMETType1,LightLeptonLT4);
+      metLtSquaredRatio=metSquaredRatio(PFMETType1,LightLeptonLT3);
 
       metHtQuadRatio=metQuadRatio(PFMETType1,HT);
       metQuadStRatio=metQuadRatio(PFMETType1,ST);
-      metLtQuadRatio=metQuadRatio(PFMETType1,LightLeptonLT4);
+      metLtQuadRatio=metQuadRatio(PFMETType1,LightLeptonLT3);
 
       BJetN = 0;
       int countEta=0;
@@ -542,4 +542,3 @@ void Seesaw_Application_SingleMuon_3L( TString myMethodList = "" )
    runData(back_name);
    std::cout << "==> TMVAClassificationApplication is done!" << endl << std::endl;
 } 
-
